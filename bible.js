@@ -1,0 +1,1 @@
+// Placeholder for core logic: loads verses, bookmarks, notes, highlights, crossrefs
