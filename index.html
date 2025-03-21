@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bible Study Suite - Unified Interface</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="ai.js"></script>
+  <script defer src="visual.js"></script>
+  <script defer src="ui.js"></script>
+  <script defer src="ai-qa.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Bible Study Suite 📖🔥</h1>
+    <nav>
+      <button onclick="showPanel('search')">🔍 Search</button>
+      <button onclick="showPanel('ai')">🤖 AI Insight</button>
+      <button onclick="showPanel('qa')">📖 Bible Q&A</button>
+      <button onclick="showPanel('symbols')">🔮 Symbols</button>
+      <button onclick="showPanel('numbers')">🔢 Numbers</button>
+      <button onclick="showPanel('doctrines')">📜 Doctrines</button>
+      <button onclick="showPanel('charts')">📊 Charts</button>
+      <button onclick="showPanel('prophecies')">🕰️ Prophecies</button>
+    </nav>
+  </header>
+  <main>
+    <section id="search" class="panel hidden">
+      <h2>Search</h2>
+      <input type="text" placeholder="Enter verse or keyword...">
+      <p>[Search functionality will be injected here]</p>
+    </section>
+    <section id="ai" class="panel hidden">
+      <h2>AI Insight</h2>
+      <input type="text" id="aiQuery" placeholder="Enter a topic or verse..." />
+      <button onclick="runAI()">Generate Insight</button>
+      <div id="aiOutput"></div>
+    </section>
+    <section id="qa" class="panel hidden">
+      <h2>Scripture Q&A</h2>
+      <input type="text" id="qaInput" placeholder="Ask about: angels, sabbath, dreams..." />
+      <button onclick="runQA()">Get Answer</button>
+      <div id="qaOutput"></div>
+    </section>
+    <section id="symbols" class="panel hidden"></section>
+    <section id="numbers" class="panel hidden"></section>
+    <section id="doctrines" class="panel hidden"></section>
+    <section id="charts" class="panel hidden">
+      <canvas id="frequencyChart" width="400" height="200"></canvas>
+    </section>
+    <section id="prophecies" class="panel hidden"></section>
+  </main>
+</body>
+</html>
